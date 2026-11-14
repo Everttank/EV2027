@@ -1,0 +1,12 @@
+node_modules
+dist
+.env.local
+*.local
+# bankexports nooit committen
+exports/
+*.TAB
+*.tab
+.impeccable/review
+*.tsbuildinfo
+
+getij-app.zip
