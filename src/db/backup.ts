@@ -23,7 +23,7 @@ export function downloadBlob(blob: Blob, filename: string) {
 /** Vervangt ALLE data door de inhoud van de back-up. */
 export async function importAll(file: File): Promise<void> {
   const json = JSON.parse(await file.text());
-  if (json?.app !== 'getij' || typeof json.data !== 'object') throw new Error('Dit is geen Getij-back-up.');
+  if (json?.app !== 'getij' || typeof json.data !== 'object') throw new Error('Dit is geen EV2027-back-up.');
   if (json.version > BACKUP_VERSION) throw new Error('Deze back-up komt uit een nieuwere versie van de app.');
   await db.transaction('rw', BACKUP_TABLES.map((t) => db.table(t)), async () => {
     for (const name of BACKUP_TABLES) {

@@ -22,7 +22,7 @@ export function Lock({ hash, onUnlock }: { hash: string; onUnlock: () => void })
   return (
     <div className="lock" data-area="today">
       <div className="stack" style={{ gap: 28, justifyItems: 'center' }}>
-        <h1>Getij</h1>
+        <h1>EV2027</h1>
         <p className="muted small">Voer je pincode in</p>
         <div className={`pin-dots ${shake ? 'shake' : ''}`} aria-label={`${pin.length} cijfers ingevoerd`}>
           {Array.from({ length: Math.max(4, pin.length) }, (_, i) => <i key={i} className={i < pin.length ? 'on' : ''} />)}

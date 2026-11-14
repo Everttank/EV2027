@@ -1,4 +1,4 @@
-# Getij
+# EV2027
 
 Persoonlijke app voor **gezondheid** (kcal + macro's, barcode scannen, vaste gerechten, stappen, sport, gewicht, rookvrij-teller), **financiën** (ABN AMRO-import, portfolio met live koersen) en een **mentale check-in**. Werkt als PWA, alles lokaal op het apparaat.
 

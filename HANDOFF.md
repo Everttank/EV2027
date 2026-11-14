@@ -1,6 +1,6 @@
-# Getij — overdracht
+# EV2027 — overdracht
 
-Getij is een persoonlijke app voor gezondheid, geld en je hoofd. Het is een web-app (PWA) die je op je Android-beginscherm zet. Er is geen server en geen account: **alle data staat lokaal op je telefoon** (IndexedDB).
+EV2027 is een persoonlijke app voor gezondheid, geld en je hoofd. Het is een web-app (PWA) die je op je Android-beginscherm zet. Er is geen server en geen account: **alle data staat lokaal op je telefoon** (IndexedDB).
 
 Dit document is geschreven voor jezelf én voor een (gratis) Claude die de app verder onderhoudt.
 
@@ -8,17 +8,17 @@ Dit document is geschreven voor jezelf én voor een (gratis) Claude die de app v
 
 ## 1. Eenmalig: de app online zetten (zonder te programmeren)
 
-1. Maak op je **eigen** GitHub-account een nieuwe, lege repository aan, bijvoorbeeld `getij`. Privé mag; GitHub Pages werkt dan alleen met een betaald account, dus kies **Public** als je gratis wilt hosten. Er staan geen geheimen in de code.
+1. Maak op je **eigen** GitHub-account een nieuwe, lege repository aan, bijvoorbeeld `EV2027`. Privé mag; GitHub Pages werkt dan alleen met een betaald account, dus kies **Public** als je gratis wilt hosten. Er staan geen geheimen in de code.
 2. Upload deze hele map, **behalve** `node_modules`, `dist` en `.env.local`:
    - met GitHub Desktop: map toevoegen → publish;
    - of in de terminal:
      ```
-     git add . && git commit -m "Getij v0.1"
-     git remote add origin https://github.com/<jouw-naam>/getij.git
+     git add . && git commit -m "EV2027 v0.1"
+     git remote add origin https://github.com/<jouw-naam>/EV2027.git
      git push -u origin main
      ```
 3. Ga in de repo naar **Settings → Pages → Source: GitHub Actions**.
-4. Na een paar minuten staat de app op `https://<jouw-naam>.github.io/getij/`.
+4. Na een paar minuten staat de app op `https://<jouw-naam>.github.io/EV2027/`.
 5. Open die link op je telefoon in Chrome en kies **⋮ → Toevoegen aan startscherm / App installeren**.
 6. Ga in de app naar **Instellingen** en vul in:
    - je profiel (geslacht, geboortejaar, lengte, activiteit, doel);
@@ -45,7 +45,7 @@ Een gratis Claude in claude.ai kan geen bestanden op je computer openen. Zo werk
 ### Startprompt (kopiëren)
 
 ```
-Je helpt me met mijn persoonlijke app "Getij" (Vite + React 19 + TypeScript, PWA, data lokaal in
+Je helpt me met mijn persoonlijke app "EV2027" (Vite + React 19 + TypeScript, PWA, data lokaal in
 IndexedDB via Dexie, grafieken met Recharts, iconen van lucide-react). Hieronder staat HANDOFF.md
 met de opbouw. Regels:
 - Alle teksten in de app zijn Nederlands; getallen/bedragen via src/lib/format.ts.

@@ -171,7 +171,7 @@ function InstellingenForm({ s }: { s: Settings }) {
         <h2>Back-up</h2>
         <p className="faint small">Alles staat alleen op dit apparaat. Maak af en toe een back-up, zeker voordat je je browser opschoont.</p>
         <div className="row">
-          <button className="btn grow" onClick={async () => downloadBlob(await exportAll(), `getij-backup-${today()}.json`)}>Exporteren</button>
+          <button className="btn grow" onClick={async () => downloadBlob(await exportAll(), `ev2027-backup-${today()}.json`)}>Exporteren</button>
           <button className="btn grow" onClick={() => importRef.current?.click()}>Terugzetten</button>
         </div>
         <input ref={importRef} type="file" accept="application/json,.json" hidden onChange={async (e) => {

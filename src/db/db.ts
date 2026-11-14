@@ -120,6 +120,7 @@ export interface Checkin {
   text: string;
 }
 
+// Interne naam 'getij' (de oorspronkelijke werknaam) blijft staan: wijzigen = data kwijt.
 class GetijDB extends Dexie {
   settings!: Table<Settings, string>;
   foods!: Table<Food, number>;

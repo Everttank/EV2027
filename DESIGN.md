@@ -1,4 +1,4 @@
-# Design — Getij (Bento)
+# Design — EV2027 (Bento)
 
 Afgeleid van de gebouwde app. Alle tokens staan in `src/styles/app.css` (`:root` en de `[data-area]`-blokken).
 

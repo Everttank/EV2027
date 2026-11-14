@@ -11,8 +11,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icon.svg'],
       manifest: {
-        name: 'Getij',
-        short_name: 'Getij',
+        name: 'EV2027',
+        short_name: 'EV2027',
         description: 'Gezondheid, geld en hoofd — alles lokaal op je telefoon.',
         lang: 'nl',
         start_url: './',
